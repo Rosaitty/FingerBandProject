@@ -1,2 +1,2 @@
-# FingerBandProject
+# FingerBendProject
 Arduino Project
