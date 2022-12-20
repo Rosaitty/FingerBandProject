@@ -5,7 +5,7 @@ int sensAdjust(int value) { // Function to calibrate sensor input to light outpu
   return result;
 }
 
-int clamp(int number, int min, int max) {
+int clamp(int number, int min, int max) { // Function to limit values to 0-255 to prevent overflow.
     int lowerBounded = number ^ ((number ^ min) & -(number < min));
     return max ^ ((lowerBounded ^ max) & -(lowerBounded < max));
 }
